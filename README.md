@@ -9,4 +9,4 @@ to build:
 2. cd rhenginex
 3. sudo docker build -t rhel7_nginx .
 4. to run simply sudo docker run -d nginx_rhel7
-5. if you forget to modify the nginx.conf params, simply attach to the running contianer and modify
+5. if you forget to modify the nginx.conf params, simply attach to the running container and modify
