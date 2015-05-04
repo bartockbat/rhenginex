@@ -1,16 +1,8 @@
-FROM registry.access.redhat.com/rhel7:latest 
+FROM registry-rhconnect.rhcloud.com/rhel71_updates
 #Maintainer
-MAINTAINER Glen Millard "gmillard@redhat.com" 
+MAINTAINER Glen Millard "gmillard@redhat.com"
 #
 #Install the necessities
-#
-#Set up your base docker image - you would need to register and configure first
-
-RUN subscription-manager register --force --username=xxxxxx --password=xxxxxxxxx
-RUN subscription-manager attach --pool=<pool_id>
-RUN subscription-manager repos --enable=rhel-7-server-extras-rpms
-RUN subscription-manager repos --enable=rhel-7-server-optional-rpms
-
 RUN yum -y update
 RUN yum -y install wget
 
